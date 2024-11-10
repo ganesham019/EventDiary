@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Swiper CSS -->
+     <link
+     rel="stylesheet"
+     href="https://unpkg.com/swiper/swiper-bundle.min.css"
+   />
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js" ></script>
+  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./styles/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    
+     <!-- carousel -->
+     <div class="services-section">
+        <h3>Our Services</h3>
+        <h2>Services We Offer For You</h2>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="/assets/slide.png" alt="Service 1" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/slide2.png" alt="Service 2" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/slide4.png" alt="Service 3" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/slide5.png" alt="Service 4" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/slide6.png" alt="Service 4" />
+            </div>
+            <!-- Add more slides as needed -->
+          </div>
+  
+          <!-- Navigation Buttons -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+
+      <script>
+        const swiper = new Swiper(".swiper-container", {
+          slidesPerView: 1, // Default number of slides in view
+          spaceBetween: 20,
+          loop: true, // Enables infinite looping
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          breakpoints: {
+            640: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+            1200: {
+              slidesPerView: 4,
+            },
+          },
+        });
+      </script>
+     <!-- Swiper JS -->
+     <script src="https://unpkg.com/swiper/swiper-bundle.min.js" ></script>
+</body>
+</html>
